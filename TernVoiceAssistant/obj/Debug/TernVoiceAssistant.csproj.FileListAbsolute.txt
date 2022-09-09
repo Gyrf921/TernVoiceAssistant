@@ -1,0 +1,11 @@
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\bin\Debug\TernVoiceAssistant.exe.config
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\bin\Debug\TernVoiceAssistant.exe
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\bin\Debug\TernVoiceAssistant.pdb
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.Form1.resources
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.Properties.Resources.resources
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.exe
+C:\Users\PC\source\repos\TernVoiceAssistant\TernVoiceAssistant\obj\Debug\TernVoiceAssistant.pdb
