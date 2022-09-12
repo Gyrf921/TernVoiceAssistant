@@ -20,14 +20,14 @@ namespace TernVoiceAssistant
                     _nameProgremsForStart.Add("телеграм");
                     _nameProgremsForStart.CopyTo(myArr);
                     return StartProgramm(myArr);
-                    break;
+                    
                 case "рабочий":
                     _nameProgremsForStart.Add("телеграм");
                     _nameProgremsForStart.Add("гугл");
                     _nameProgremsForStart.Add("рабочую таблицу");
                     _nameProgremsForStart.CopyTo(myArr);
                     return StartProgramm(myArr);
-                    break;
+                    
                 case "игровой":
                     _nameProgremsForStart.Add("дискорд");
                     _nameProgremsForStart.Add("стим");
@@ -35,12 +35,12 @@ namespace TernVoiceAssistant
                     _nameProgremsForStart.Add("вконтакте");
                     _nameProgremsForStart.CopyTo(myArr);
                     return StartProgramm(myArr);
-                    break;
+                    
                 case "полный":
                     _nameProgremsForStart.AddRange(PersonGrammar._NameProgram);
                     _nameProgremsForStart.CopyTo(myArr);
                     return StartProgramm(myArr);
-                    break;
+                    
             }
             return "";
         }

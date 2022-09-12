@@ -21,7 +21,7 @@ namespace TernVoiceAssistant
 
         public static string[] _AudioType = new string[] { "любимую", "стандартную", "по умолчанию"}; // Запуск погоды
         public static string[] _Weather = new string[] { "погоду", "температуру", "ветер", "полный прогноз" }; // Запуск погоды
-        public static string[] _StartAll = new string[] { "запусти", "запуск", "старт", "открой", "выведи", "покажи", "включи", "активируй", "установить" }; // Общие слова для запуска чего либо
+        public static string[] _StartAll = new string[] { "расскажи","запусти", "запуск", "старт", "открой", "выведи", "покажи", "включи", "активируй", "установить" }; // Общие слова для запуска чего либо
         public static string[] _NameProgram = new string[] { "стим", "валорант", "гугл", "вконтакте", "телеграм",  "рабочую таблицу", "дискорд"}; // Запуск приложения  
         public static string[][] _StartGameWithstartWord = new string[][] {  _StartAll ,  _NameProgram  };
 
@@ -179,9 +179,15 @@ namespace TernVoiceAssistant
         }
         public static Grammar VoiceJokeGrammar()
         {
-            Choices ch_DRSS = new Choices("расскажи анекдот", "терн расскажи анекдот");
+            Choices ch_StartSMTH = new Choices(_StartAll);
+            Choices ch_DRSS = new Choices("анекдот", "шутку");
+            GrammarBuilder gb_P1 = new GrammarBuilder();
+            gb_P1.Culture = _language;
 
-            Grammar g_V = new Grammar(ch_DRSS); //управляющий Grammar
+            gb_P1.Append(ch_StartSMTH);
+            gb_P1.Append(ch_DRSS);
+
+            Grammar g_V = new Grammar(gb_P1); //управляющий Grammar
             return g_V;
         }
 

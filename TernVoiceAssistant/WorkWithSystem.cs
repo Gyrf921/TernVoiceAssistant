@@ -9,6 +9,19 @@ namespace TernVoiceAssistant
 {
     internal class WorkWithSystem
     {
+        public static void CoiseActionWithSystem(string _act)
+        {
+            switch (_act) 
+            {
+                case "выключи компьютер":
+                    TurnOffPC();
+                    break;
+                case "перезагрузка":
+                    WorkWithSystem.RestartPC();
+                    break;
+            }
+        }
+
 
         public static void TurnOffPC() 
         {
