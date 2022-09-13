@@ -110,7 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Audio\AudioPlayer.cs" />
-    <Compile Include="Audio\Music.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,7 +121,6 @@
     <Compile Include="PersonGrammar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Protocols.cs" />
     <Compile Include="WorkWithSystem.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

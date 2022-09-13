@@ -84,6 +84,11 @@ namespace TernVoiceAssistant.Audio
             waveOutSetVolume(hWO, AllEarpiece);
         }
 
+        static public void SetOutputDevice(uint _numberOutputDevice) 
+        {
+            HWO = _numberOutputDevice;
+        }
+
 
         [DllImport("winmm.dll")]
         private static extern long mciSendString(string lpstrCommand, StringBuilder lpstrReturnString, int  uReturnLength, int hwdCallBack);

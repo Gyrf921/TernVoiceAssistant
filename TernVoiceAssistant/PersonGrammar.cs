@@ -21,7 +21,8 @@ namespace TernVoiceAssistant
 
         public static string[] _AudioType = new string[] { "любимую", "стандартную", "по умолчанию"}; // Запуск погоды
         public static string[] _Weather = new string[] { "погоду", "температуру", "ветер", "полный прогноз" }; // Запуск погоды
-        public static string[] _StartAll = new string[] { "расскажи","запусти", "запуск", "старт", "открой", "выведи", "покажи", "включи", "активируй", "установить" }; // Общие слова для запуска чего либо
+        public static string[] _StartAll = new string[] { "расскажи","запусти", "запуск", "старт", "открой", "выведи", "покажи", "включи", "активируй", "установить", "сделай"}; // Общие слова для запуска чего либо
+        public static string[] _StopAll = new string[] { "убери","стоп", "останови", "прекрати", "тормози", "скрой", "спрячь", "выключи"}; // Общие слова для остановки чего либо
         public static string[] _NameProgram = new string[] { "стим", "валорант", "гугл", "вконтакте", "телеграм",  "рабочую таблицу", "дискорд"}; // Запуск приложения  
         public static string[][] _StartGameWithstartWord = new string[][] {  _StartAll ,  _NameProgram  };
 
@@ -57,36 +58,37 @@ namespace TernVoiceAssistant
             "Штирлиц не любил массовых расстрелов, но отказываться было как-то неудобно...",
             "Штирлиц сел в машину и сказал Кэт- Трогай! Кэт потрогала и сказала - Ого!",
             "Штирлиц сел в машину и крикнул: - Гони! Через пять минут с заднего сиденья запахло свежим самогоном.",
-            ////Про негров
-            //"Как напугать негра? Взять его с собой на аукцион.",
-            //"Какие у негра есть три белых вещи? Глаза, зубы и хозяин.",
-            //"Что надо сделать, если вам навстречу бежит окровавленный негр? Перезарядить.",
-            //"Какие три самых сложных года в жизни негра? Первый класс.",
-            //"Что общего между кроссовками 'Найк' и Ку-Клукс-Кланом? Они заставляют негров быстро бегать.",
-            //"Что надо бросить тонущему негру? Его семью.",
-            //"Африканцы хотят попасть в ад, потому что там есть котлы с водой.",
-            //"У кошек есть примета: если дорогу перебежит негр...",
-            ////Про азиатов
-            //"Китайцы взломали сайт Пентагона, каждый попробовал по паролю.",
-            //"- Дорогие дети! Сегодня в программе \"Красный, желтый, зеленый\" я расскажу о том, как индеец и китаец нашли утопленника...",
-            ////Чернуха
-            //"Пап, хватит шутить на тему того, что я приёмный. Давай лучше в дурака сыграем! Отец: В подкидного?",
-            //"Как разговаривают немые и безрукие? Болтают ногами",
-            //"Мама, мне нанесли четыре ножевых ранения, я умираю... - Почему не пять?",
-            //"На распродаже органов началась ужасная драка. Я еле успел унести ноги",
-            //"Из студенческого общежития куда-то исчезли все кошки… Вот такие пироги.",
-            ////Другое
-            //"Признался друзьям о том, что они геи",
-            //"Дрочат только слабаки. Настоящие мужчины eбут кулак.",
-            //"Пупа и Лупа пришли в парфюмерную. Им выдали пробники духов, но у Лупы был заложен нос, поэтому Пупа нюхнул за Лупу",
-            //"В магазине гражданин обращается к продавцу: — Скажите, пожалуйста, где сидит ваш заведующий? — А откуда вы знаете, что он сидит?"
+            //Про негров
+            "Как напугать негра? Взять его с собой на аукцион.",
+            "Какие у негра есть три белых вещи? Глаза, зубы и хозяин.",
+            "Что надо сделать, если вам навстречу бежит окровавленный негр? Перезарядить.",
+            "Какие три самых сложных года в жизни негра? Первый класс.",
+            "Что общего между кроссовками 'Найк' и Ку-Клукс-Кланом? Они заставляют негров быстро бегать.",
+            "Что надо бросить тонущему негру? Его семью.",
+            "Африканцы хотят попасть в ад, потому что там есть котлы с водой.",
+            "У кошек есть примета: если дорогу перебежит негр...",
+            //Про азиатов
+            "Китайцы взломали сайт Пентагона, каждый попробовал по паролю.",
+            "- Дорогие дети! Сегодня в программе \"Красный, желтый, зеленый\" я расскажу о том, как индеец и китаец нашли утопленника...",
+            //Чернуха
+            "Пап, хватит шутить на тему того, что я приёмный. Давай лучше в дурака сыграем! Отец: В подкидного?",
+            "Как разговаривают немые и безрукие? Болтают ногами",
+            "Мама, мне нанесли четыре ножевых ранения, я умираю... - Почему не пять?",
+            "На распродаже органов началась ужасная драка. Я еле успел унести ноги",
+            "Из студенческого общежития куда-то исчезли все кошки… Вот такие пироги.",
+            //Другое
+            "Признался друзьям о том, что они геи",
+            "Дрочат только слабаки. Настоящие мужчины eбут кулак.",
+            "Пупа и Лупа пришли в парфюмерную. Им выдали пробники духов, но у Лупы был заложен нос, поэтому Пупа нюхнул за Лупу",
+            "В магазине гражданин обращается к продавцу: — Скажите, пожалуйста, где сидит ваш заведующий? — А откуда вы знаете, что он сидит?"
 
         };
         public static string[] _Ternlaugh = new string[] {
             "ха-ха-ха-ха",
             "АХАХАХАХАХАХАХХАХА",
             "пхпхХПХХПхПХПХпх" ,
-            "Хи хи Это было забавно хе хе"};
+            "Хи хи Это было забавно хе хе"
+        };
 
 
 
@@ -194,7 +196,9 @@ namespace TernVoiceAssistant
         public static Grammar AudioGrammar()
         {
             Choices ch_StartSMTH = new Choices(_StartAll);
+            Choices ch_StopSMTH = new Choices(_StopAll);
             Choices ch_Audio = new Choices(_AudioType);
+            Choices ch_Music = new Choices("песню", "музыку", "музыки", "песни");
 
             GrammarBuilder gb_P1 = new GrammarBuilder();
             GrammarBuilder gb_P2 = new GrammarBuilder();
@@ -206,22 +210,29 @@ namespace TernVoiceAssistant
 
             //Первый шаблон для открытия случайной песни
             gb_P1.Append(ch_StartSMTH);
-            gb_P1.Append("случайную песню");
+            gb_P1.Append("случайную");
+            gb_P1.Append(ch_Music);
 
             //Первый шаблон для открытия установленной как стандартной песни
             gb_P2.Append(ch_StartSMTH);
-            gb_P2.Append("мою любимую песню");
+            gb_P2.Append("любимую");
+            gb_P2.Append(ch_Music);
 
             //Первый шаблон для открытия выборочной песни
             gb_P3.Append(ch_StartSMTH);
-            gb_P3.Append("выбор песни");
+            gb_P3.Append("выбор");
+            gb_P3.Append(ch_Music);
 
             //Установка текущей песни как стандарной
-            gb_P4.Append("установить песню как");
+            gb_P4.Append("установить");
+            gb_P4.Append(ch_Music);
+            gb_P4.Append("как");
             gb_P4.Append(ch_Audio);
 
             //Остановка песни
-            gb_P5.Append("остановить музыку");
+            gb_P5.Append(ch_StopSMTH);
+            gb_P5.Append(ch_Music);
+
 
             Choices bothChoices = new Choices(new GrammarBuilder[] { gb_P1, gb_P2 , gb_P3, gb_P4, gb_P5 });
 
@@ -244,20 +255,86 @@ namespace TernVoiceAssistant
 
             return g_v;
         }
-        public static Grammar OnOffPC_Grammar()
+        public static Grammar OnOffPCGrammar()
         {
             Choices ch_DRSS = new Choices("выключи компьютер", "перезагрузка");
 
             Grammar g_V = new Grammar(ch_DRSS); //управляющий Grammar
             return g_V;
         }
-        public static Grammar Compliments_Grammar()
-        {
-            Choices ch_DRSS = new Choices("сделай комплимент", "у меня плохое настроение");
 
-            Grammar g_V = new Grammar(ch_DRSS); //управляющий Grammar
+        public static Grammar StopWorkInterfaceGrammar()
+        {
+            Choices ch_StopSMTH = new Choices(_StopAll);
+            GrammarBuilder gb_P2 = new GrammarBuilder();
+            gb_P2.Culture = _language;
+
+            gb_P2.Append(ch_StopSMTH);
+            gb_P2.Append("интерфейс");
+
+            Grammar g_V = new Grammar(gb_P2); //управляющий Grammar
             return g_V;
         }
 
+        public static Grammar StartWorkInterfaceGrammar()
+        {
+            Choices ch_StartSMTH = new Choices(_StartAll);
+            GrammarBuilder gb_P1 = new GrammarBuilder();
+            gb_P1.Culture = _language;
+
+            //Первый шаблон для открытия случайной песни
+            gb_P1.Append(ch_StartSMTH);
+            gb_P1.Append("интерфейс");
+
+            Grammar g_V = new Grammar(gb_P1); //управляющий Grammar
+            return g_V;
+        }
+
+        public static Grammar ComplimentsGrammar()
+        {
+            Choices ch_StartSMTH = new Choices(_StartAll);
+            Choices ch_DRSS = new Choices("комплимент", "приятно", "тепло") ;
+
+            GrammarBuilder gb_Compl1 = new GrammarBuilder();
+            gb_Compl1.Culture = _language; 
+
+            gb_Compl1.Append(ch_StartSMTH);
+            gb_Compl1.Append(ch_DRSS);
+
+            Grammar g_V = new Grammar(gb_Compl1); //управляющий Grammar
+            return g_V;
+        }
+
+
+        public static string[] _SetOutputDevice = new string[] { "колонки", "наушники", "другой" };
+        public static Grammar SetOutputDeviceGrammar()
+        {
+            Choices ch_StartSMTH = new Choices(_StartAll);
+            Choices ch_SOD = new Choices(_SetOutputDevice);
+
+            GrammarBuilder gb_Compl1 = new GrammarBuilder();
+            gb_Compl1.Culture = _language;
+
+            gb_Compl1.Append(ch_StartSMTH);
+            gb_Compl1.Append("устройство вывода как");
+            gb_Compl1.Append(ch_SOD);
+
+            Grammar g_V = new Grammar(gb_Compl1); //управляющий Grammar
+            return g_V;
+        }
+
+        public static Grammar StopWorkTern()
+        {
+            Choices ch_StopSMTH = new Choices(_StopAll);
+            Choices ch_Name = new Choices("себя", "терн");
+            GrammarBuilder gb_P2 = new GrammarBuilder();
+            gb_P2.Culture = _language;
+
+            gb_P2.Append(ch_StopSMTH);
+            gb_P2.Append(ch_Name);
+
+            Grammar g_V = new Grammar(gb_P2); //управляющий Grammar
+            return g_V;
+        }
     }
 }
